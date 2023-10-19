@@ -67,6 +67,7 @@ ul li {
   list-style: none;
 }
 img {
+  display: block;
   vertical-align: top;
 }
 
@@ -123,6 +124,11 @@ body {
   background-color: #ffffff;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-title {
   color: var(--title-dark);
   font-size: 36px;
@@ -145,8 +151,6 @@ p {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 /* !!! HEADER !!!*/
@@ -162,6 +166,7 @@ p {
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -171,6 +176,7 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 24px 0;
   color: var(--logo-accent);
 }
 
@@ -208,6 +214,7 @@ p {
 .address-list {
   display: flex;
   gap: 40px;
+  align-items: center;
   font-style: normal;
 }
 
@@ -230,16 +237,15 @@ p {
 
 .hero-section {
   background-color: var(--title-dark);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-section-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
   text-align: center;
 }
 
 .page-title {
-  width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
   font-size: 56px;
@@ -247,15 +253,20 @@ p {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+
   color: var(--text-white);
 }
 
 .button {
+  display: block;
+  margin: 0 auto;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  min-width: 169px;
   padding: 16px 32px;
   border-radius: 4px;
   background-color: var(--primary-button);
@@ -334,11 +345,12 @@ p {
 .master-item {
   text-align: center;
   width: 264px;
+  border-radius: 0 0 4px 4px;
   background-color: var(--background-white);
 }
 
-.master-image {
-  margin-bottom: 32px;
+.master-description {
+  padding: 32px 0;
 }
 
 .master {
@@ -346,6 +358,7 @@ p {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
   margin-bottom: 8px;
   color: var(--title-dark);
 }
@@ -353,7 +366,7 @@ p {
 .master-position {
   font-size: 16px;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
+  text-align: center;
 }
 
 /* portfolio section */
@@ -366,6 +379,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
@@ -377,13 +391,18 @@ p {
   margin-bottom: 32px;
 }
 
-.project-name {
+.project-description-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.project-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-left: 16px;
   color: var(--title-dark);
 }
 
@@ -392,8 +411,6 @@ p {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
-  margin-left: 16px;
 }
 
 /* footer */
@@ -403,13 +420,12 @@ p {
 }
 
 .footer-container {
-  padding-top: 102px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
   display: inline-block;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .footer .logo-accent {

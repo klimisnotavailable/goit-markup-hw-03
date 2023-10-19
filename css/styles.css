@@ -155,6 +155,10 @@ p {
 
 /* !!! HEADER !!!*/
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header-container {
   display: flex;
   justify-content: space-between;
@@ -198,6 +202,7 @@ p {
 }
 
 .navigation-link {
+  padding: 24px 0;
   color: var(--navigation-link-primary);
 }
 
@@ -417,9 +422,6 @@ p {
 
 .footer {
   background-color: var(--background-dark);
-}
-
-.footer-container {
   padding: 100px 0;
 }
 

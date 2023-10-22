@@ -164,8 +164,6 @@ p {
 .page-header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 /* navigation */
@@ -204,6 +202,7 @@ p {
 }
 
 .navigation-link {
+  display: block;
   padding: 24px 0;
   color: var(--navigation-link-primary);
 }
@@ -229,6 +228,8 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+
   color: var(--address-link-primary);
 }
 

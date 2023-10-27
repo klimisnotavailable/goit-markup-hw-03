@@ -616,9 +616,9 @@ p {
 }
 
 .footer-socials-link:hover {
-  background-color: var(--social-link-hover);
+  background-color: var(--footer-link-secondary-variant);
 }
 
 .footer-socials-link:focus {
-  background-color: var(--social-link-focus);
+  background-color: var(--footer-link-secondary-variant);
 }

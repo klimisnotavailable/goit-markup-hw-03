@@ -164,6 +164,8 @@ p {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -216,15 +218,20 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.home-page {
+  color: #404bbf;
+}
+
 .home-page::after {
   content: "";
   position: absolute;
   display: block;
+  margin-top: 20px;
+  bottom: -1;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background: var(--navigation-link-hover);
-  margin-top: 20px;
 }
 
 .navigation-link:hover {
@@ -266,6 +273,7 @@ p {
 /* hero section */
 
 .hero-section {
+  margin: 0 auto;
   background-color: var(--title-dark);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -274,6 +282,8 @@ p {
     url(../images/backgrounds/hero-section-background\ 12.21.31.jpg);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -308,7 +318,6 @@ p {
   border-radius: 4px;
   background-color: var(--primary-button);
   color: var(--button-text);
-  /* transition: backgound-color, 250ms; */
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -350,6 +359,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 112px;
   padding: 24px 100px;
   border-radius: 4px;
   background: #f4f4fd;
@@ -455,6 +465,8 @@ p {
 
 .social-icon {
   fill: #f4f4fd;
+  width: 16px;
+  height: 16px;
 }
 
 .social-link:hover {

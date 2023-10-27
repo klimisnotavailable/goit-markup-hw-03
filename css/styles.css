@@ -578,13 +578,13 @@ p {
 }
 
 .footer-text {
-  font-weight: 500;
   width: 264px;
   color: var(--text-light);
 }
 
 .footer-socials-text {
   color: var(--text-white);
+  font-weight: 500;
   margin-bottom: 16px;
 }
 
